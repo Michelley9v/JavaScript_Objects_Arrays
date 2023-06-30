@@ -58,6 +58,32 @@ for (let i = 0; i < words.length; i++){
 const reversedStr = reversedArr.join(" ");
 console.log(reversedStr);
 
-reversedStr=reversedStr.join("");
-console.log(reversedStr);
+//* Exercise 4
+
+let csvData = "name,age\nFrodo,50\nSam,38\nMerry,36\nPippin,26";
+console.log(csvData)
+const dataPairs = csvData.split("\n");
+console.log(dataPairs);
+const headers = dataPairs[0].split(",");
+console.log(headers);
+
+const resultArr =[];
+
+for(let i = 1; i < dataPairs.length; i++){
+    const data = dataPairs [i].split(",");
+    console.log(data);
+
+const rowObj = {};
+    rowObj.name = data[0];
+    rowObj.age = data[1];
+
+console.log(rowObj);
+resultArr.push(rowObj);
+}
+
+console.log(resultArr);
+
+
+
+
 
