@@ -81,7 +81,7 @@ console.log(rowObj);
 resultArr.push(rowObj);
 }
 
-console.log(resultArr);
+console.log(resultArr)();
 
 
 
